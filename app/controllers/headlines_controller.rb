@@ -8,6 +8,10 @@ class HeadlinesController < ApplicationController
     res = Net::HTTP.start(url.host, url.port) { |http|
       http.request(req)
     }
-    render :json => res.body
+    @headlines = []
+    JSON.parse(res.body)['results'].each do |element|
+      @headlines << Headline.create(title: element['title'], abstract: element['abstract'], url: element['url'])
+    end
+    render :json => @headlines
   end
 end
