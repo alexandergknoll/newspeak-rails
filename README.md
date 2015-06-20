@@ -1,0 +1,1 @@
+# newspeak-rails
