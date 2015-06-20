@@ -10,7 +10,7 @@ class HeadlinesController < ApplicationController
     }
     @headlines = []
     JSON.parse(res.body)['results'].each do |element|
-      @headlines << Headline.create(title: element['title'], abstract: element['abstract'], url: element['url'])
+      @headlines << Headline.new(title: element['title'], abstract: element['abstract'], url: element['url'])
     end
     render :json => @headlines
   end
