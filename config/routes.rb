@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   root to: 'visitors#index'
 
   devise_for :users, controllers: {
-    sessions: 'devise/sessions'
+    sessions: 'devise/sessions',
+    registrations: 'registrations'
   }
 
   get '/users/interests', to: 'users#interests', as: 'interests'
