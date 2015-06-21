@@ -129,3 +129,23 @@
     height: 50%;
   }
 }
+
+@media (max-width:950px){
+  .phone-image {
+    margin-top: -4%;
+  }
+  .phone-image img {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+@media (max-width:750px){
+  .phone-image {
+    margin-top: -4%;
+  }
+  .phone-image img {
+    width: 30%;
+    height: 30%;
+  }
+}
