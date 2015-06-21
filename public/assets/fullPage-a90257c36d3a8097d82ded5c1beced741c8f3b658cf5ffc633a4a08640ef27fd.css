@@ -1,0 +1,128 @@
+.phone-image {
+  position: absolute;
+  margin-top: -10%;
+  margin-left: 18%;
+  height: auto !important;
+}
+
+#section0{
+  background-image: url("section0back.png");
+  background-repeat: no-repeat;
+}
+
+#section0 h1 {
+  position: relative;
+  margin-top: -4%;
+  margin-left: 46%;
+  color: white;
+}
+
+#section0 p {
+  margin-top: 2%;
+  margin-left: 46%;
+  color: white;
+  font-size: 1.5em;
+  width: 40%;
+}
+
+#section0 a button {
+  margin-left: 46%;
+  margin-right: 1em;
+  display: block;
+  float: left;
+}
+
+#section0 button a {
+  color: white;
+}
+
+#section0 button a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar.navbar-inverse {
+  position: fixed !important;
+  z-index: 105 !important;
+  width: 100% !important;
+}
+
+#section2 {
+  background-color: #4582ec;
+}
+
+#section3 {
+  background-color: #d3d3d3;
+}
+
+#section1 h1 {
+  text-align: center;
+}
+
+#section1 ul li {
+  margin-left: 28%;
+  font-size: 1.5em;
+}
+
+#section2 h1 {
+  text-align: center;
+  color: white;
+}
+
+#section2 h3 {
+  text-align: center;
+  color: white;
+  margin-bottom: 1em;
+}
+
+#section2 ul li {
+  margin-left: 28%;
+  font-size: 1.5em;
+  color: white;
+}
+
+.circular {
+  width: 180px;
+  height: 180px;
+  border-radius: 150px;
+  margin-right: 2em;
+}
+
+#section3 table {
+  margin: 0 auto;
+}
+
+#section3 h2 {
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+#section3 h3 {
+  margin-left: -2em;
+  font-weight: lighter;
+  color: black;
+}
+
+#section3 h5 {
+  margin-left: -2em;
+  text-transform: uppercase;
+  color: #4582ec;
+  margin-top: -0.5em;
+}
+
+#section3 tr {
+  display: block;
+  padding-top: 3em;
+}
+
+#section3 td {
+  display: inline-block;
+  padding-right: 3em;
+}
+
+@media (max-width:1100px){
+  .phone-image img {
+    max-width: 50%;
+    max-height: 50%;
+  }
+}
