@@ -28,6 +28,7 @@ class UsersController < ApplicationController
         Interest.find_or_create_by(user: user, category: category)
       end
     end
+    flash[:notice] = 'Your interests have been updated'
     redirect_to interests_path
   end
 
