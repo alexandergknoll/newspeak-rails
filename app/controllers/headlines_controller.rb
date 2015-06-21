@@ -4,9 +4,9 @@ class HeadlinesController < ApplicationController
 
   def index
     if params[:categories]
-      url = URI.parse("http://api.nytimes.com/svc/news/v3/content/all/#{params[:categories]}/.json?api-key=sample-key")
+      url = URI.parse("http://api.nytimes.com/svc/news/v3/content/all/#{params[:categories]}/.json?limit=5&api-key=sample-key")
     else
-      url = URI.parse("http://api.nytimes.com/svc/news/v3/content/all/u.s./.json?api-key=sample-key")
+      url = URI.parse("http://api.nytimes.com/svc/news/v3/content/all/u.s./.json?limit=5&api-key=sample-key")
     end
     req = Net::HTTP::Get.new(url.to_s)
     res = Net::HTTP.start(url.host, url.port) { |http|
