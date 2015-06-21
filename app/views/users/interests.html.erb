@@ -1,0 +1,14 @@
+<%= form_for(@user, :html => { :role => 'form' }) do |f| %>
+	<%= f.fields_for :interests, f.object.interests.sort_by{|interest| interest.category.name} do |interests_form| %>
+		<div class="form-group">
+      <label><%= Category.find(interests_form.object.category).name %></label>
+      <%= interests_form.hidden_field :category_id %>
+      <% if interests_form.object.id %>
+	      <%= interests_form.check_box :_destroy, {class: 'form-control', checked: true}, '0', '1' %>
+      <% else %>
+	      <%= interests_form.check_box :_destroy, {class: 'form-control'}, '0', '1' %>
+      <% end %>
+    </div>
+	<% end %>
+ <%= f.submit 'Save', :class => 'button btn-primary' %>
+<% end %>

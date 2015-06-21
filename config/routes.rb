@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     sessions: 'devise/sessions'
   }
 
-  get '/users/interests', to: 'users#interests'
+  get '/users/interests', to: 'users#interests', as: 'interests'
 
   resources :users
   resources :headlines
