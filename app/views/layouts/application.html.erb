@@ -37,7 +37,7 @@
               <% end %>
               <% if(!current_user) %>
                   <li><%=  link_to('LOG IN', sign_in_path) %></li>
-                  <li><%=  link_to('REGISTER', registration_path) %></li>
+                  <li><%=  link_to('REGISTER', new_user_registration_path) %></li>
               <% end %>
             </ul>
           </div>
