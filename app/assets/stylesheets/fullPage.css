@@ -1,4 +1,3 @@
-
 .phone-image {
   position: absolute;
   margin-top: -10%;
@@ -45,4 +44,38 @@
   position: fixed !important;
   z-index: 105 !important;
   width: 100% !important;
+}
+
+#section2 {
+  background-color: #4582ec;
+}
+
+#section3 {
+  background-color: #d3d3d3;
+}
+
+#section1 h1 {
+  text-align: center;
+}
+
+#section1 ul li {
+  margin-left: 28%;
+  font-size: 1.5em;
+}
+
+#section2 h1 {
+  text-align: center;
+  color: white;
+}
+
+#section2 h3 {
+  text-align: center;
+  color: white;
+  margin-bottom: 1em;
+}
+
+#section2 ul li {
+  margin-left: 28%;
+  font-size: 1.5em;
+  color: white;
 }
