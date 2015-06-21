@@ -9,6 +9,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'phony_rails'
 gem 'pg'
+gem 'jquery-ui-rails'
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
