@@ -14,12 +14,27 @@ class UsersController < ApplicationController
 
   def interests
     @user = current_user
+    Category.all.each do |category|
+      @user.interests.build(category: category) if Interest.new(user: @user, category: category).valid?
+    end
+  end
+
+  def update
+    user = current_user
+    user.update(user_params)
+    user_params['interests_attributes'].each_value do |interest|
+      if interest['_destroy'] == '0'
+        category = Category.find(interest['category_id'])
+        Interest.find_or_create_by(user: user, category: category)
+      end
+    end
+    redirect_to interests_path
   end
 
   private
 
   def user_params
-    params.require(:user).permit(:interests_attributes)
+    params.require(:user).permit(interests_attributes: [ :_destroy, :id, :category_id ])
   end
 
 end

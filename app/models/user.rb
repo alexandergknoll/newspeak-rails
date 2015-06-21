@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   has_many :interests
   has_many :categories, through: :interests
-  # accepts_nested_attributes_for :interests, :reject_if => lambda { |a| a[:num].blank? }, :allow_destroy => true
+  accepts_nested_attributes_for :interests, :reject_if => lambda { |a| a[:num].blank? }, :allow_destroy => true
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
