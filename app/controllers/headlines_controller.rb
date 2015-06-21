@@ -9,8 +9,12 @@ class HeadlinesController < ApplicationController
       http.request(req)
     }
     @headlines = []
-    JSON.parse(res.body)['results'].each do |element|
-      @headlines << Headline.new(title: element['title'], abstract: element['abstract'], url: element['url'])
+    if JSON.parse(res.body)['status'] == 'OK'
+      JSON.parse(res.body)['results'].each do |element|
+        @headlines << Headline.new(title: element['title'], abstract: element['abstract'], url: element['url'])
+      end
+    else
+      @headlines << Headline.new(title: "There was an error getting your news.")
     end
     render :json => @headlines
   end
