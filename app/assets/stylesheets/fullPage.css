@@ -1,14 +1,23 @@
-#section0{
-  max-height: 50%;
-  background-image: url("section0back.png");
+.phone-image {
+  margin-top: 15%;
+  margin-left: 20%;
+  float: left;
 }
 
-#section0 h2 {
+#section0{
+  background-image: url("section0back.png");
+  background-repeat: no-repeat;
+}
+
+#section0 h1 {
   color: white;
+  float: right;
 }
 
 #section0 p {
+  margin-left: 7%;
   color: white;
+  float: left;
 }
 
 .navbar.navbar-inverse {
