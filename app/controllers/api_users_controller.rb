@@ -3,7 +3,7 @@ class ApiUsersController < ApplicationController
   before_filter :find_user, only: [:show]
 
   def show
-    render json: @user
+    render json: @user, :include => {:categories => {:only => [:name, :abbreviation]}} 
   end
 
   private
