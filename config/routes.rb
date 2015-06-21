@@ -1,15 +1,11 @@
 Rails.application.routes.draw do
   root to: 'visitors#index'
   devise_for :users, controllers: {
-    sessions: 'users/sessions'
+    sessions: 'devise/sessions'
   }
 
   get '/users/interests', to: 'users#interests'
 
-  devise_scope :user do
-    get "sign_in", to: "devise/sessions#new"
-    get "sign_out", to: "devise/sessions#destroy"
-  end
   resources :users
   resources :headlines
 
