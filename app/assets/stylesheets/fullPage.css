@@ -79,3 +79,42 @@
   font-size: 1.5em;
   color: white;
 }
+
+.circular {
+  width: 180px;
+  height: 180px;
+  border-radius: 150px;
+  margin-right: 2em;
+}
+
+#section3 table {
+  margin: 0 auto;
+}
+
+#section3 h2 {
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+#section3 h3 {
+  margin-left: -2em;
+  font-weight: lighter;
+  color: black;
+}
+
+#section3 h5 {
+  margin-left: -2em;
+  text-transform: uppercase;
+  color: #4582ec;
+  margin-top: -0.5em;
+}
+
+#section3 tr {
+  display: block;
+  padding-top: 3em;
+}
+
+#section3 td {
+  display: inline-block;
+  padding-right: 3em;
+}
