@@ -7,3 +7,10 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 user = CreateAdminService.new.call
 puts 'CREATED ADMIN USER: ' << user.email
+
+Category.create!(name: "World", abbreviation: "world")
+Category.create!(name: "U.S.", abbreviation: "u.s.")
+Category.create!(name: "Business", abbreviation: "business")
+Category.create!(name: "Technology", abbreviation: "technology")
+Category.create!(name: "Science", abbreviation: "science")
+Category.create!(name: "Health", abbreviation: "health")
