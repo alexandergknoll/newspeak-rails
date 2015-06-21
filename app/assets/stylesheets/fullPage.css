@@ -1,7 +1,8 @@
+
 .phone-image {
-  margin-top: 15%;
-  margin-left: 20%;
-  float: left;
+  position: absolute;
+  margin-top: -10%;
+  margin-left: 18%;
 }
 
 #section0{
@@ -10,14 +11,22 @@
 }
 
 #section0 h1 {
+  position: relative;
+  margin-top: -4%;
+  margin-left: 46%;
   color: white;
-  float: right;
 }
 
 #section0 p {
-  margin-left: 7%;
+  margin-top: 2%;
+  margin-left: 46%;
   color: white;
-  float: left;
+  font-size: 1.5em;
+  width: 40%;
+}
+
+#section0 button {
+  margin-left: 46%;
 }
 
 .navbar.navbar-inverse {
