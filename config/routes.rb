@@ -4,6 +4,8 @@ Rails.application.routes.draw do
     sessions: 'users/sessions'
   }
 
+  get '/users/interests', to: 'users#interests'
+
   devise_scope :user do
     get "sign_in", to: "devise/sessions#new"
     get "sign_out", to: "devise/sessions#destroy"
