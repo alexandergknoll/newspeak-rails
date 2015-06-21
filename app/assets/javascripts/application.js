@@ -14,5 +14,4 @@
 //= require jquery_ujs
 //= require jquery-ui/dialog
 //= require twitter/bootstrap
-//= require turbolinks
 //= require_tree .

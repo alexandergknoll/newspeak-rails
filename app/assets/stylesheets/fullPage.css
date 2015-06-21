@@ -1,0 +1,18 @@
+#section0{
+  max-height: 50%;
+  background-image: url("section0back.png");
+}
+
+#section0 h2 {
+  color: white;
+}
+
+#section0 p {
+  color: white;
+}
+
+.navbar.navbar-inverse {
+  position: fixed !important;
+  z-index: 105 !important;
+  width: 100% !important;
+}
